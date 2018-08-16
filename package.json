@@ -20,7 +20,7 @@
   },
   "engines": {
     "node": ">= 9.2",
-    "npm" : ">= 6.1.0"
+    "npm": ">= 6.1.0"
   },
   "dependencies": {
     "@nestjs/common": "^5.0.0",
@@ -28,6 +28,7 @@
     "@nestjs/graphql": "^3.0.0",
     "apollo-server-express": "^2.0.2",
     "bcryptjs": "^2.4.3",
+    "core-js": "^2.5.7",
     "dotenv": "^6.0.0",
     "fastify-formbody": "^2.0.0",
     "glob": "^7.1.2",

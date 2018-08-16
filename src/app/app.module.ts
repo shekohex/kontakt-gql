@@ -17,10 +17,11 @@ export class ApplicationModule {
 
     const schema = this.graphQLFactory.createSchema({ typeDefs, logger: new Logger('Schema') });
     const db = new Prisma({
-      debug: true,
+      debug: false,
       endpoint: Env('PRISMA_ENDPOINT', 'http://localhost:4466'),
       secret: Env('PRISMA_MANAGEMENT_API_SECRET', ''),
     });
+    Object.freeze(db);
     const server = new ApolloServer({
       schema,
       tracing: true,

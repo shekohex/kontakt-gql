@@ -1,0 +1,13 @@
+# import { Contact, PhoneNumber, PhoneType } from "src/app/gql/generated/prisma.graphql"
+# import { ContactCreateInput ContactUpdateInput, ContactWhereUniqueInput } from "src/app/gql/generated/prisma.graphql"
+type Query {
+  contacts(limit: Int): [Contact]!
+  contact(id: ID!): Contact
+  node(id: ID!): Node
+}
+
+type Mutation {
+  addContact(data: ContactCreateInput!): Contact!
+  updateContact(data: ContactUpdateInput!, where: ContactWhereUniqueInput!): Contact
+  deleteContact(where: ContactWhereUniqueInput!): Contact
+}

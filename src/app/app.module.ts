@@ -21,15 +21,11 @@ export class ApplicationModule {
       endpoint: Env('PRISMA_ENDPOINT', 'http://localhost:4466'),
       secret: Env('PRISMA_MANAGEMENT_API_SECRET', ''),
     });
-    console.log({
-      PRISMA_ENDPOINT: Env('PRISMA_ENDPOINT', 'http://localhost:4466'),
-      PRISMA_MANAGEMENT_API_SECRET: Env('PRISMA_MANAGEMENT_API_SECRET', ''),
-      PORT: Env('PORT', '3000'),
-    });
     const server = new ApolloServer({
       schema,
       tracing: true,
-      playground: true,
+      playground: false,
+      introspection: true,
       context: ({ req, res }) => ({
         req,
         res,

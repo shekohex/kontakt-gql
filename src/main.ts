@@ -7,6 +7,9 @@ async function bootstrap() {
   const appModule = app.get(ApplicationModule);
   const httpServer = app.getHttpServer();
   appModule.configureGraphQL(app, httpServer);
-  await app.listen(Env<string>('APP_PORT', '3000'));
+  await app
+    .disable('etag')
+    .disable('x-powered-by')
+    .listen(Env<string>('APP_PORT', '3000'));
 }
 bootstrap();

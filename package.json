@@ -18,6 +18,10 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "webpack": "webpack --config webpack.config.js"
   },
+  "engines": {
+    "node": ">= 9.2",
+    "npm" : ">= 6.1.0"
+  },
   "dependencies": {
     "@nestjs/common": "^5.0.0",
     "@nestjs/core": "^5.0.0",

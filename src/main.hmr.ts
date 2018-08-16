@@ -12,7 +12,7 @@ async function bootstrap() {
   await app
     .disable('etag')
     .disable('x-powered-by')
-    .listen(Env<string>('APP_PORT', '3000'));
+    .listen(Env<string>('PORT', '3000'));
 
   if (module.hot) {
     module.hot.accept();

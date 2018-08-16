@@ -121,6 +121,10 @@ let ApplicationModule = class ApplicationModule {
             endpoint: utils_1.Env('PRISMA_ENDPOINT', 'http://localhost:4466'),
             secret: utils_1.Env('PRISMA_MANAGEMENT_API_SECRET', ''),
         });
+        console.log({
+            PRISMA_ENDPOINT: utils_1.Env('PRISMA_ENDPOINT', 'http://localhost:4466'),
+            PRISMA_MANAGEMENT_API_SECRET: utils_1.Env('PRISMA_MANAGEMENT_API_SECRET', ''),
+        });
         const server = new apollo_server_express_1.ApolloServer({
             schema,
             tracing: true,

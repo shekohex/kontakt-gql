@@ -40,7 +40,7 @@ module.exports = {
   },
   plugins: [new HardSourceWebpackPlugin(), new webpack.NamedChunksPlugin()],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'build'),
     libraryTarget: 'commonjs2',
     filename: '[name].js',
     sourceMapFilename: '[name].js.map',

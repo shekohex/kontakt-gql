@@ -124,7 +124,7 @@ let ApplicationModule = class ApplicationModule {
         const server = new apollo_server_express_1.ApolloServer({
             schema,
             tracing: true,
-            playground: false,
+            playground: true,
             context: ({ req, res }) => ({
                 req,
                 res,

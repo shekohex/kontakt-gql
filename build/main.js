@@ -124,6 +124,7 @@ let ApplicationModule = class ApplicationModule {
         console.log({
             PRISMA_ENDPOINT: utils_1.Env('PRISMA_ENDPOINT', 'http://localhost:4466'),
             PRISMA_MANAGEMENT_API_SECRET: utils_1.Env('PRISMA_MANAGEMENT_API_SECRET', ''),
+            PORT: utils_1.Env('PORT', '3000'),
         });
         const server = new apollo_server_express_1.ApolloServer({
             schema,

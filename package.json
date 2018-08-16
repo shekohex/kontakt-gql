@@ -9,7 +9,7 @@
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
     "start:dev": "nodemon",
     "prestart:prod": "rm -rf dist && webpack --config webpack.prod.js",
-    "start:prod": "node dist/main.js",
+    "start:prod": "node build/main.js",
     "start:hmr": "node dist/server",
     "dev": "npm-run-all --parallel start:hmr playground",
     "playground": "graphql playground",

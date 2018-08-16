@@ -522,6 +522,9 @@ input PhoneNumberWhereInput {
 
   """All values that are not contained in given list."""
   type_not_in: [PhoneType!]
+  _MagicalBackRelation_ContactToPhoneNumber_every: ContactWhereInput
+  _MagicalBackRelation_ContactToPhoneNumber_some: ContactWhereInput
+  _MagicalBackRelation_ContactToPhoneNumber_none: ContactWhereInput
 }
 
 input PhoneNumberWhereUniqueInput {
@@ -675,6 +678,9 @@ export interface PhoneNumberWhereInput {
   type_not?: PhoneType
   type_in?: PhoneType[] | PhoneType
   type_not_in?: PhoneType[] | PhoneType
+  _MagicalBackRelation_ContactToPhoneNumber_every?: ContactWhereInput
+  _MagicalBackRelation_ContactToPhoneNumber_some?: ContactWhereInput
+  _MagicalBackRelation_ContactToPhoneNumber_none?: ContactWhereInput
 }
 
 export interface PhoneNumberCreateOneInput {

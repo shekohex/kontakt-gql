@@ -25,7 +25,7 @@ export class ApplicationModule {
     const server = new ApolloServer({
       schema,
       tracing: true,
-      playground: false,
+      playground: true,
       context: ({ req, res }) => ({
         req,
         res,

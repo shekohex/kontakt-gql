@@ -13,6 +13,7 @@
     "start:hmr": "node dist/server",
     "dev": "npm-run-all --parallel start:hmr playground",
     "playground": "graphql playground",
+    "build": "webpack --config webpack.prod.js",
     "test": "jest",
     "test:cov": "jest --coverage",
     "test:e2e": "jest --config ./test/jest-e2e.json",

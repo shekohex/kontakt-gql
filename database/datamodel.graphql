@@ -1,0 +1,17 @@
+type Contact {
+  id: ID! @unique
+  name: String!
+  phone: PhoneNumber!
+}
+
+type PhoneNumber {
+  id: ID! @unique
+  number: String!
+  type: PhoneType @default(value: "MOBILE")
+}
+
+enum PhoneType {
+  MOBILE
+  HOME
+  WORK
+}

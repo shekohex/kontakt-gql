@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "pretty": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "sourceMap": true,
+    "allowJs": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "rootDir": "src",
+    "paths": {
+      "@app/*": ["./app/*"]
+    },
+    "typeRoots": ["./@types"],
+    "lib": ["esnext"]
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true,
+    "cacheDirectory": ".cache"
+  },
+  "include": ["src/**/*", "**/*.env", "src/**/*.json", "@types"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

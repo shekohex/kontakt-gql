@@ -1,5 +1,7 @@
 # kontakt-gql
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/shekohex/kontakt-gql.svg)](https://greenkeeper.io/)
+
 ## Description
 
 Yet another Contact Manager Using Nestjs and GraphQL
